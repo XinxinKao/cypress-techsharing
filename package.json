@@ -6,8 +6,8 @@
     "scripts": {
         "cy:open": "cypress open",
         "cy:run": "cypress run --browser firefox:dev",
-        "start:backend": "./gradlew bootRun",
-        "start:frontend": "cd app && npm run start",
+        "start:backend": "gradlew bootRun",
+        "start:frontend": "cd app && npm run dev",
         "test:dev": "run-p -clnr start:backend start:frontend cy:open",
         "test:ci": "run-p -clnr start:backend start:frontend cy:run"
     },
