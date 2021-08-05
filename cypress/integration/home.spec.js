@@ -4,6 +4,10 @@ describe("Home page", () => {
     });
   
     it('Home button is existed', () => {
-        cy.contains('Home')
+        cy.contains('Home');
+    });
+
+    it('Groups button is existed', () => {
+        cy.contains('Groups');
     });
   });
