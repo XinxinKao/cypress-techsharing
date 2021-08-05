@@ -5,9 +5,10 @@
     "main": "index.js",
     "scripts": {
         "cy:open": "cypress open",
-        "cy:run": "cypress run --browser firefox:dev",
+        "cy:run": "cypress run",
         "start:backend": "gradlew bootRun",
         "start:frontend": "cd app && npm run dev",
+        "build:frontend": "cd app && npm install && npm run build && cd -",
         "test:dev": "run-p -clnr start:backend start:frontend cy:open",
         "test:ci": "run-p -clnr start:backend start:frontend cy:run"
     },
