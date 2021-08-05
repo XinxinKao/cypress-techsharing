@@ -18,4 +18,4 @@ describe("Home page", () => {
         cy.findByRole("link", { name: /visit cypress\.io/i }).click();
         cy.url().should("eq", "https://www.cypress.io/");
     });
-  });
+});
